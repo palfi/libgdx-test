@@ -1,4 +1,4 @@
-package com.palfi.games.screens.question;
+package com.palfi.games.screens.question.model;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;

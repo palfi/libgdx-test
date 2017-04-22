@@ -2,17 +2,16 @@ package com.palfi.games.screens.question;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.badlogic.gdx.scenes.scene2d.EventListener;
-import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.palfi.games.screens.menu.MainMenuScreen;
+import com.palfi.games.screens.menu.ui.MainMenuScreen;
+import com.palfi.games.screens.question.model.Choice;
+import com.palfi.games.screens.question.model.FileQuestions;
 
 class ChoiceButton extends TextButton {
 

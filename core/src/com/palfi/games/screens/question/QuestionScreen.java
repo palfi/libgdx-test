@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.palfi.games.Screen;
+import com.palfi.games.screens.question.model.Question;
+import com.palfi.games.screens.question.model.Questions;
 
 public class QuestionScreen extends Screen {
 

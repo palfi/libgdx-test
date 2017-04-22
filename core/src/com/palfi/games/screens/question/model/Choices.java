@@ -1,10 +1,10 @@
-package com.palfi.games.screens.question;
+package com.palfi.games.screens.question.model;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-class Choices {
+public class Choices {
     private final List<Choice> choices;
 
     Choices(String correct, String false1, String false2, String false3) {
@@ -13,7 +13,7 @@ class Choices {
         Collections.shuffle(choices);
     }
 
-    Choice get(int i) {
+    public Choice get(int i) {
         return choices.get(i);
     }
 }

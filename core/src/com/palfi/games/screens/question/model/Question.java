@@ -1,6 +1,6 @@
-package com.palfi.games.screens.question;
+package com.palfi.games.screens.question.model;
 
-class Question {
+public class Question {
     private final String questionText;
     private final Choices choices;
 
@@ -9,11 +9,11 @@ class Question {
         this.choices = choices;
     }
 
-    Choices choices() {
+    public Choices choices() {
         return choices;
     }
 
-    String questionText() {
+    public String questionText() {
         return questionText;
     }
 }

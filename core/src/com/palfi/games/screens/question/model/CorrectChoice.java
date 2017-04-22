@@ -1,10 +1,9 @@
-package com.palfi.games.screens.question;
+package com.palfi.games.screens.question.model;
 
-class FalseChoice implements Choice {
+class CorrectChoice implements Choice {
     private final String value;
 
-    FalseChoice(String value) {
-
+    CorrectChoice(String value) {
         this.value = value;
     }
 
@@ -15,6 +14,6 @@ class FalseChoice implements Choice {
 
     @Override
     public boolean isCorrect() {
-        return false;
+        return true;
     }
 }
