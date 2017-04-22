@@ -8,7 +8,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.palfi.games.screens.question.model.FileQuestions;
-import com.palfi.games.screens.question.QuestionScreen;
+import com.palfi.games.screens.question.ui.QuestionScreen;
 
 class PlayButton extends ImageButton {
 
