@@ -17,8 +17,7 @@ class ChoiceButton extends TextButton {
 
     ChoiceButton(int x, int y, Choice choice, Game game) {
         super(choice.text(), style());
-        setY(y);
-        setX(x);
+        setPosition(x, y);
         addListener(new Listener(game, choice));
     }
 

@@ -11,8 +11,8 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
 public abstract class Screen extends ScreenAdapter {
 
-    protected static final int WIDTH = 480;
-    protected static final int HEIGHT = 800;
+    public static final int WIDTH = 480;
+    public static final int HEIGHT = 800;
 
     protected final Stage stage;
     private final Game game;

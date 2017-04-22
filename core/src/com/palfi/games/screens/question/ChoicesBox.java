@@ -15,30 +15,32 @@ class ChoicesBox extends Actor {
         int textureHeight = choiceTexture.getHeight();
         int textureWidth = choiceTexture.getWidth();
 
-        int widthPadding = (int) ((stage.getWidth() - textureWidth * 2) / 3);
+        int padding = (int) ((stage.getWidth() - textureWidth * 2) / 3);
 
         ChoiceButton topLeft = new ChoiceButton(
-                widthPadding,
+                padding,
                 textureHeight + HEIGHT_PADDING * 2,
                 choices.get(0), game);
         stage.addActor(topLeft);
 
         ChoiceButton bottomLeft = new ChoiceButton(
-                widthPadding,
+                padding,
                 HEIGHT_PADDING,
                 choices.get(1), game);
         stage.addActor(bottomLeft);
 
         ChoiceButton topRight = new ChoiceButton(
-                textureWidth + widthPadding * 2,
+                textureWidth + padding * 2,
                 textureHeight + HEIGHT_PADDING * 2,
                 choices.get(2), game);
         stage.addActor(topRight);
 
         ChoiceButton bottomRight = new ChoiceButton(
-                textureWidth + widthPadding * 2,
+                textureWidth + padding * 2,
                 HEIGHT_PADDING,
                 choices.get(3), game);
         stage.addActor(bottomRight);
+
+        setY(textureHeight * 2);
     }
 }

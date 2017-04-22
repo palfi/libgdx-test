@@ -16,7 +16,6 @@ class QuestionBox extends Actor {
         this.texture = new Texture("question_box.png");
     }
 
-
     @Override
     public void draw(Batch batch, float parentAlpha) {
         float viewportHeight = getStage().getHeight();

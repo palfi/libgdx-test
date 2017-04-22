@@ -3,6 +3,7 @@ package com.palfi.games.screens.question;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.palfi.games.Screen;
 import com.palfi.games.screens.question.model.Question;
@@ -14,8 +15,17 @@ public class QuestionScreen extends Screen {
         super(game);
         Question question = questions.random();
         stage.addActor(new Image(new TextureRegion(new Texture("question_background.png"))));
-        stage.addActor(new ChoicesBox(question.choices(), stage, game));
+        ChoicesBox choicesBox = new ChoicesBox(question.choices(), stage, game);
+        stage.addActor(choicesBox);
         stage.addActor(new QuestionBox(question.questionText()));
-       // stage.addActor(new TimeleftBox(10));
+        addTimeleftBox(choicesBox);
+    }
+
+    private void addTimeleftBox(ChoicesBox choicesBox) {
+        float seconds = 10f;
+        int width = (int) (WIDTH * 0.8f);
+        float y = choicesBox.getY() + 30;
+        int x = WIDTH / 2 - width / 2;
+        stage.addActor(new TimeleftBox(x, y, seconds, width));
     }
 }

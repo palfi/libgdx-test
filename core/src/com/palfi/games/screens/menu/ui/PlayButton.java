@@ -14,8 +14,7 @@ class PlayButton extends ImageButton {
 
     PlayButton(float x, float y, Game game) {
         super(new TextureRegionDrawable(new TextureRegion(new Texture("start_game_button.png"))));
-        setY(y - getHeight() / 2);
-        setX(x - getWidth() / 2);
+        setPosition(x - getWidth() / 2, y - getHeight() / 2);
         addListener(new Listener(game));
     }
 
