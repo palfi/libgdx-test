@@ -1,6 +1,6 @@
 android {
     buildToolsVersion "25.0.2"
-    compileSdkVersion 23
+    compileSdkVersion 25
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -19,8 +19,8 @@ android {
     }
     defaultConfig {
         applicationId "com.palfi.games"
-        minSdkVersion 23
-        targetSdkVersion 23
+        minSdkVersion 8
+        targetSdkVersion 25
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7

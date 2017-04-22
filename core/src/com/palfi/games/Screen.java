@@ -6,27 +6,21 @@ import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
 public abstract class Screen extends ScreenAdapter {
+
+    protected static final int WIDTH = 480;
+    protected static final int HEIGHT = 800;
 
     protected final Stage stage;
     private final Game game;
 
     protected Screen(Game game) {
-        OrthographicCamera camera = new OrthographicCamera();
-        camera.setToOrtho(false, 480, 800);
-        this.stage = new Stage(new ScreenViewport(camera));
+        this.stage = new Stage(new FitViewport(WIDTH, HEIGHT));
         Gdx.input.setInputProcessor(this.stage);
         this.game = game;
-    }
-
-    public Screen(Screen previous) {
-        this(previous.game());
-    }
-
-    private Game game() {
-        return game;
     }
 
     @Override
