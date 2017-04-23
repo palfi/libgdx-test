@@ -1,4 +1,4 @@
-package com.palfi.games.screens.question.ui;
+package com.palfi.games.screens.question;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;

@@ -1,4 +1,4 @@
-package com.palfi.games.screens.question.ui;
+package com.palfi.games.screens.question;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;

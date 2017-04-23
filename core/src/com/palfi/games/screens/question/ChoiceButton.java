@@ -1,6 +1,5 @@
-package com.palfi.games.screens.question.ui;
+package com.palfi.games.screens.question;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -9,13 +8,14 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
-import com.palfi.games.screens.menu.ui.MainMenuScreen;
-import com.palfi.games.screens.question.model.Choice;
-import com.palfi.games.screens.question.model.FileQuestions;
+import com.palfi.games.MyGame;
+import com.palfi.games.model.question.Choice;
+import com.palfi.games.model.question.FileQuestions;
+import com.palfi.games.screens.menu.MainMenuScreen;
 
 class ChoiceButton extends TextButton {
 
-    ChoiceButton(int x, int y, Choice choice, Game game) {
+    ChoiceButton(int x, int y, Choice choice, MyGame game) {
         super(choice.text(), style());
         setPosition(x, y);
         addListener(new Listener(game, choice));
@@ -27,10 +27,10 @@ class ChoiceButton extends TextButton {
     }
 
     private class Listener extends ChangeListener {
-        private final Game game;
+        private final MyGame game;
         private final Choice choice;
 
-        Listener(Game game, Choice choice) {
+        Listener(MyGame game, Choice choice) {
             this.game = game;
             this.choice = choice;
         }

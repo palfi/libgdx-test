@@ -1,4 +1,4 @@
-package com.palfi.games.screens.question.model;
+package com.palfi.games.model.question;
 
 import java.util.Arrays;
 import java.util.Collections;

@@ -1,15 +1,15 @@
-package com.palfi.games.screens.question.ui;
+package com.palfi.games.screens.question;
 
-import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.palfi.games.screens.question.model.Choices;
+import com.palfi.games.MyGame;
+import com.palfi.games.model.question.Choices;
 
 class ChoicesBox extends Actor {
     private static final int HEIGHT_PADDING = 10;
 
-    ChoicesBox(Choices choices, Stage stage, Game game) {
+    ChoicesBox(Choices choices, Stage stage, MyGame game) {
         Texture choiceTexture = new Texture("answer_box.png");
 
         int textureHeight = choiceTexture.getHeight();

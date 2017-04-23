@@ -1,2 +1,2 @@
-1+1?;2;1;3;4
-Hva heter du?;Anders;Simen;Endre;Iren
+1+1?;2;1;3;4;MATH
+Hva heter du?;Anders;Simen;Endre;Iren;NAMES
